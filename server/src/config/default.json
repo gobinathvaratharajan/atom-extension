@@ -1,0 +1,29 @@
+{
+    "domain": "http://localhost:5173",
+    "throttle": {
+        "api": {
+            "max": 1000,
+            "windowMs": 3600000,
+            "headers": true,
+            "message": "Too many requests from this IP, please try again in an hour!"
+        },
+        "signup": {
+            "max": 5,
+            "windowMs": 3600000,
+            "headers": true,
+            "message": "you have reached the maximum number of signups, please try again in an hour!"
+        },
+        "signin": {
+            "max": 5,
+            "windowMs": 3600000,
+            "headers": true,
+            "message": "you have reached the maximum number of signins, please try again in a minute!"
+        },
+        "password_reset": {
+            "max": 3,
+            "windowMs": 3600000,
+            "headers": true,
+            "message": "you have reached the maximum number of password resets, please try again in an hour!"
+        }
+    }
+}
