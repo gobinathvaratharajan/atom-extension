@@ -9,3 +9,5 @@ server/.env
 # Build files
 client/build
 server/dist
+
+.vscode

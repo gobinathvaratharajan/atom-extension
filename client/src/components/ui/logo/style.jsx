@@ -18,6 +18,5 @@ export const LogoText = styled.p`
   font-weight: 700;
   font-size: ${(props) => props.theme.text.xl};
   background: linear-gradient(90deg, #ff675f, #e2c568);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `;

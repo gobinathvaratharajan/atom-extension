@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom';
 import get from 'lodash/get';
 import * as Yup from 'yup';
 
-import { Button, Card, Error, Input, Logo } from 'components';
 import { Content, LogoWrapper, Title, Wrapper, SecondaryAction } from './style';
 import { useAppContext } from 'context';
 import { useApi } from 'hooks/useApi';
 import { actions } from 'constants/action';
+import { Logo, Button, Card, Error, Input } from 'components/ui';
 
 export const Register = () => {
   const { dispatch } = useAppContext();
@@ -57,7 +57,7 @@ export const Register = () => {
         <LogoWrapper>
           <Logo />
         </LogoWrapper>
-        <Title>Create a account</Title>
+        <Title>Register your account</Title>
         {error && <Error>{error}</Error>}
         <form>
           <Content>
@@ -86,7 +86,8 @@ export const Register = () => {
               id="password"
               type="password"
               name="password"
-              label="Password"
+              label="Enter your Password"
+              autocomplete="on"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.password}

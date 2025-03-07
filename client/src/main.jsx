@@ -4,10 +4,10 @@ import { ThemeProvider } from 'styled-components';
 import { ToastContainer } from 'react-toastify';
 
 import App from './app.jsx';
-import { GlobalStyle } from 'global.style.jsx';
-import { AppProvider } from 'context.jsx';
 import { theme } from './lib/theme.js';
 import 'react-toastify/dist/ReactToastify.css';
+import { AppProvider } from './context.jsx';
+import { GlobalStyle } from 'global.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
